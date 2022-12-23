@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  rapidservice-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8011:8011"
+    restart: unless-stopped
